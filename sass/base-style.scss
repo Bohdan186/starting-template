@@ -1,0 +1,166 @@
+// ------------------------------------------------------------------------------------------------
+// BASE STYLE
+// ------------------------------------------------------------------------------------------------
+
+// ------------------------------------------
+// VARIABLES
+// ------------------------------------------
+
+// $primColor1: ;
+// $primColor2: ;
+$transition: all .4s ease;
+
+// ------------------------------------------
+// BODY
+// ------------------------------------------
+
+body {
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #535353;
+}
+
+
+// ------------------------------------------
+// HEADERS
+// ------------------------------------------
+	
+h1,h2,h3,h4,h5,h6 {
+	font-family: sans-serif;
+	font-weight: 600;
+	color: #2d2b27;
+	margin-bottom: 30px;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 38px;
+}
+
+h3 {
+	font-size: 26px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 15px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+// ------------------------------------------
+// PARAGRAPHS
+// ------------------------------------------
+
+p {
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+
+// ------------------------------------------
+// LINKS
+// ------------------------------------------
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: $transition;
+}
+
+// ------------------------------------------
+// IMAGES
+// ------------------------------------------
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+// ------------------------------------------
+// FORM
+// ------------------------------------------
+
+form,
+input,
+textarea,
+select {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+
+// ------------------------------------------
+// BUTTONS
+// ------------------------------------------
+
+.button {
+	display: inline-block;
+	border: none;
+	background: none;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.primary-button {
+	padding: 18px 50px;
+	border-radius: 40px;
+	box-shadow: 1.169px 3.825px 16px 0px rgba(1, 2, 2, 0.35);
+}
+
+.article-button {
+	padding: 18px 24px;
+	border-radius: 10px;
+	&.btn-bgcolor1 {
+		box-shadow: 0px 10px 0px 0px #A57EE9;
+	}
+	
+	&.btn-bgcolor2 {
+		box-shadow: 0px 10px 0px 0px #FF5990;
+	}
+}
+
+.btn-bgcolor1 {
+	background-color: $primColor1;
+
+	&:hover {
+		background-color: #5f34aa;
+	}
+}
+
+.btn-bgcolor2 {
+	background-color: $primColor2;
+
+	&:hover {
+		background-color: #ff1161;
+	}
+}
+
+// ------------------------------------------
+// COLOR SCHEME
+// ------------------------------------------
+
+.color-scheme-light {
+	
+	h1,h2,h3,h4,h5,h6,i {
+		color: #FFF;
+	}
+	
+	p, ul {
+		color: #fff;
+	}
+}
